@@ -1,6 +1,6 @@
 #include<stdio.h>
 int n;
-int queue[15];
+int queue[20];
 int front =-1;
 int rear=-1;
 void enqueue(int x)
@@ -26,7 +26,7 @@ void dequeue()
  	front=rear=-1;
  else
  {
- printf("%d is removed from the queue ",queue[front]);
+ printf("%d is deleted from the queue ",queue[front]);
  	front++;
  }
 }
@@ -45,21 +45,21 @@ for(int i=front;i<(rear+1);i++)
 void main()
 {
 	int c=0,s;
-	printf("Enter the maximum size of the queue");
+	printf("Enter the  size of the queue");
 	scanf("%d",&n);
 	while(c!=4)
 	{
-	printf("Choose the operation you need to perform\n");
-	printf("1.enqueue\n");
-	printf("2.dequeue\n");	
-	printf("3.display\n");
-	printf("4.stop");	
+	printf("Choose the operation  to perform\n");
+	printf("1.Enqueue\n");
+	printf("2.Dequeue\n");	
+	printf("3.Display\n");
+	printf("4.Stop");	
 	scanf("\n%d",&c);
 
 	switch(c)
 	{
 		case 1:
-			printf("Enter the number to be entered");
+			printf("Enter the no: to be entered");
 			scanf("%d",& s);
 			enqueue(s);
 			break;
@@ -70,10 +70,10 @@ void main()
 			display();
 			break;
 		case 4:
-			printf("Code executed successfully");
+			printf("Code successfully executed");
 			break;
 		default:
-			printf("Invalid Function");
+			printf("error");
 			break;
 	}
 	}
