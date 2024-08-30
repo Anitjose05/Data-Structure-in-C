@@ -33,7 +33,7 @@ void dequeue()
 void display()
 {
  if(front==-1 && rear==-1)
- 	printf("the queue is empty\n ");
+ 	printf("The queue is empty\n ");
  else 
  {
 for(int i=front;i<(rear+1);i++)
@@ -53,7 +53,7 @@ void main()
 	printf("1.Enqueue\n");
 	printf("2.Dequeue\n");	
 	printf("3.Display\n");
-	printf("4.Stop\n");	
+	printf("4.Exit\n");	
 	scanf("\n%d",&x);
 
 	switch(x)
