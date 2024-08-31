@@ -38,28 +38,29 @@ void display()
  {
 for(int i=front;i<(rear+1);i++)
  {
-	printf("%d\n",queue[i]);
+	printf("%d\t",queue[i]);
  }
+ printf("\n");
  }
 }
 void main()
 {
 	int x=0,y;
-	printf("Enter the  size of the queue\n");
+	printf("Enter the  size of the queue :");
 	scanf("%d",&n);
 	while(x!=4)
 	{
-	printf("Choose the operation  to perform\n");
 	printf("1.Enqueue\n");
 	printf("2.Dequeue\n");	
 	printf("3.Display\n");
-	printf("4.Exit\n");	
-	scanf("\n%d",&x);
+	printf("4.Exit\n");
+	printf("Choose the operation  to perform :");	
+	scanf("%d",&x);
 
 	switch(x)
 	{
 		case 1:
-			printf("Enter the no: to be entered\n");
+			printf("Enter the no: to be entered :");
 			scanf("%d",& y);
 			enqueue(y);
 			break;
@@ -73,7 +74,7 @@ void main()
 			printf("Code successfully executed");
 			break;
 		default:
-			printf("error");
+			printf("Invalid Choice\n");
 			break;
 	}
 	}
