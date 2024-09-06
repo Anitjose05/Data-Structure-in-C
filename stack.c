@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include<stdio.h>
 int n;
 int stack[20];
 int top = -1;
