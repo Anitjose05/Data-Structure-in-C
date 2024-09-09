@@ -5,7 +5,7 @@ void swap(int a, int b,int A[])
     A[a] = A[b];
     A[b] = t;
 }
-int part(int A[], int low, int high) 
+int p(int A[], int low, int high) 
 {
     int pivot = A[high];
     int i = (low-1);
@@ -24,7 +24,7 @@ void quick(int A[], int low, int high)
 {
     if (low < high)
     {
-        int pivot = part(A, low, high);
+        int pivot = p(A, low, high);
         quick(A, low, pivot - 1);
         quick(A, pivot + 1, high);
     }
