@@ -1,0 +1,32 @@
+#include<stdio.h>
+void main ()
+{
+int position,i,n;
+printf("Enter the no:of elements:");
+scanf ("%d",&n);
+int a[n];
+printf("Enter the elements of binary tree:\n");
+for (i=0;i<n;i++)
+{
+    scanf("%d",&a[i]);
+}
+printf("Enter the position:");
+scanf("%d",&position);
+if (position==0)
+printf("NO ELEMENT AT POSITION 0...\n");
+else
+{
+    if (position/2==0)
+    printf("NO PARENT\n");
+    else
+    printf("Parent node of %d=%d\n",a[position],a[position/2]);
+    if (2*position>n)
+    printf("NO LEFT CHILD...\n");
+    else
+    printf("Left Child of %d=%d\n",a[position],a[2*position]);
+    if ((2*position)+1>n)
+    printf("NO RIGHT CHILD...\n");
+    else
+    printf("Right Child of %d=%d\n",a[position],a[(2*position)+1]);
+}
+}
