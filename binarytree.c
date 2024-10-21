@@ -11,7 +11,12 @@ void main ()
    {
       scanf("%d",&a[i]);
    }
-   printf("Enter the position:");
+   printf("BINARY TREE: ");
+   for (i=0; i<n; i++) 
+   {
+      printf("%d\t",a[i]);
+   }
+   printf("\nEnter the position:");
    scanf("%d",&position);
    if (position<0 || position>=n)
    {
@@ -23,8 +28,7 @@ void main ()
    else
    {
       if (position>0)
-      printf("PARENT NODE OF %d=%d\n",a[position],a[(position-1)/2]);
-      
+      printf("PARENT NODE OF %d=%d\n",a[position],a[(position-1)/2]);      
       else
       printf("NO PARENT!\n");
       if ((2*position)+1>=n)
